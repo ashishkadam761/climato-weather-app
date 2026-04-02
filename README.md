@@ -58,7 +58,39 @@ Climato demonstrates **API integration, modern JavaScript, responsive UI, and cl
 
 ## 🚀 How to Run
 
-1. Clone the repository:
-
-```bash
+1.Clone the repository
 git clone https://github.com/yourusername/climato-weather-app.git
+----------------------------
+2.Navigate into the project folder
+
+cd climato-weather-app
+----------------------------
+
+3.Get your free OpenWeatherMap API key
+
+Go to https://openweathermap.org/api
+Sign up and generate an API key.
+----------------------------
+
+4.Add your API key
+Open script.js and replace:
+
+const API_KEY = "YOUR_API_KEY";
+
+with your actual API key.
+----------------------------
+
+5.Run the project
+Simply open index.html in your browser.
+
+No installation required 🎉
+
+
+## 🚀 👨‍💻 Author
+
+Ashish Kadam
+
+If you like this project, feel free to connect with me 👇
+
+LinkedIn: https://linkedin.com/in/yourprofile
+GitHub: https://github.com/yourusername
