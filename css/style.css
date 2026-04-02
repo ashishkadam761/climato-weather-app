@@ -1,0 +1,149 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.app-container {
+  background: url('../assets/background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 2rem;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+#cityInput {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+#getWeather {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #1e90ff;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#getWeather:hover {
+  background-color: #63b3ed;
+}
+
+.temp-toggle {
+  margin-bottom: 1rem;
+}
+
+.temp-toggle button {
+  padding: 0.4rem 1rem;
+  margin: 0 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.temp-toggle button.active {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #1e90ff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 1rem auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
+  margin-top: 1rem;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.forecast {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-top: 1rem;
+  padding-bottom: 10px;
+}
+
+.forecast::-webkit-scrollbar {
+  height: 8px;
+}
+
+.forecast::-webkit-scrollbar-thumb {
+  background-color: #1e90ff;
+  border-radius: 4px;
+}
+
+.forecast .hour-card {
+  min-width: 80px;
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.forecast .hour-card:hover {
+  transform: scale(1.05);
+}

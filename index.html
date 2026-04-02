@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climato | Real-Time Weather</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="overlay">
+      <h1>Climato</h1>
+      <p class="subheading">Check the Weather Anywhere in the World</p>
+
+      <div class="input-container">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="getWeather">Get Weather</button>
+        <select id="historyDropdown">
+          <option value="">Previous Searches</option>
+        </select>
+      </div>
+
+      <div class="temp-toggle">
+        <button id="celsiusBtn" class="active">°C</button>
+        <button id="fahrenheitBtn">°F</button>
+      </div>
+
+      <div id="loader" class="loader hidden"></div>
+
+      <div id="weatherCard" class="card hidden">
+        <h2 id="cityName"></h2>
+        <img id="weatherIcon" src="" alt="Weather Icon">
+        <p id="description"></p>
+        <p>Temperature: <span id="temperature"></span></p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind: <span id="wind"></span> km/h</p>
+        <p>Sunrise: <span id="sunrise"></span></p>
+        <p>Sunset: <span id="sunset"></span></p>
+      </div>
+
+      <div id="hourlyForecast" class="forecast hidden">
+        <!-- JS will populate hourly forecast cards -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
