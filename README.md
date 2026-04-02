@@ -92,5 +92,5 @@ Ashish Kadam
 
 If you like this project, feel free to connect with me 👇
 
-LinkedIn: https://linkedin.com/in/yourprofile
-GitHub: https://github.com/yourusername
+LinkedIn: linkedin.com/in/ashish-kadam-326b9226b
+GitHub: https://github.com/ashishkadam761
